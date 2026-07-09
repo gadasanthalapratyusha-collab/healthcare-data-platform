@@ -1,145 +1,271 @@
-# 🏥 Healthcare Data Platform
+# 🏥 Healthcare Claims Data Platform
 
-## 📌 Project Overview
+An end-to-end **Data Engineering** project that simulates a real-world healthcare claims data platform. This project demonstrates how healthcare data is ingested, stored, processed, orchestrated, transformed, and prepared for analytics using modern Data Engineering tools and best practices.
 
-The **Healthcare Data Platform** is an end-to-end Data Engineering project that simulates how a healthcare insurance company processes daily healthcare claims.
-
-This project demonstrates how raw healthcare data is ingested, stored, transformed, modeled, and visualized using modern Data Engineering technologies.
-
-The goal is to build a production-style data platform while learning each technology from scratch.
+The project is being built incrementally using an agile sprint-based approach to mirror how real-world data engineering projects are developed.
 
 ---
 
-# 🎯 Business Problem
+# 🎯 Project Goal
 
-Healthcare organizations receive thousands of insurance claims every day from hospitals, clinics, and providers.
+Build a production-style healthcare data platform that:
 
-The raw data arrives in different formats and must be:
-
-- Collected
-- Validated
-- Cleaned
-- Stored
-- Transformed
-- Reported
-
-The business needs a centralized platform that automatically processes this data and provides analytics for decision-making.
+- Ingests healthcare datasets from raw source files
+- Stores operational data in PostgreSQL
+- Automates workflows using Apache Airflow
+- Processes large datasets using PySpark
+- Builds analytics-ready models with dbt
+- Stores data in a cloud data lake (AWS S3)
+- Creates business dashboards using Power BI
 
 ---
 
-# 🏗️ High-Level Architecture
+# 🏗️ Planned End-to-End Architecture
 
 ```
-Healthcare Claims Data
-        │
-        ▼
-Python Data Ingestion
-        │
-        ▼
-PostgreSQL
-        │
-        ▼
-Apache Airflow
-        │
-        ▼
-AWS S3 Data Lake
-        │
-        ▼
-PySpark (Databricks)
-        │
-        ▼
-Snowflake
-        │
-        ▼
-dbt
-        │
-        ▼
-Power BI Dashboard
+                    Healthcare Source Files
+                              │
+                              ▼
+                     Raw CSV Files
+                              │
+                              ▼
+                   Python ETL Pipeline
+                              │
+                              ▼
+                     PostgreSQL Database
+                              │
+                              ▼
+                 Apache Airflow Orchestration
+                              │
+                              ▼
+                  PySpark Transformations
+                              │
+                              ▼
+                    AWS S3 Data Lake
+                              │
+                              ▼
+                  dbt Analytics Models
+                              │
+                              ▼
+                   Power BI Dashboard
+```
+
+---
+
+# 📁 Project Structure
+
+```
+healthcare-data-platform/
+│
+├── airflow/
+│   └── dags/
+│
+├── architecture/
+│
+├── dashboard/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── sample/
+│
+├── dbt/
+│
+├── docker/
+│
+├── docs/
+│
+├── postgres/
+│   └── schema.sql
+│
+├── pyspark/
+│
+├── python/
+│
+├── screenshots/
+│
+├── tests/
+│
+├── warehouse/
+│
+├── docker-compose.yml
+│
+└── README.md
 ```
 
 ---
 
 # 🛠️ Tech Stack
 
-| Layer | Technology |
-|--------|------------|
-| Programming | Python |
-| Database | PostgreSQL |
-| Containerization | Docker |
-| Workflow Orchestration | Apache Airflow |
-| Data Lake | AWS S3 |
-| Big Data Processing | PySpark |
-| Spark Platform | Databricks |
-| Data Warehouse | Snowflake |
-| Analytics Engineering | dbt |
-| Dashboard | Power BI |
-| Version Control | Git & GitHub |
+## Version Control
+
+- Git
+- GitHub
+
+## Development
+
+- VS Code
+
+## Infrastructure
+
+- Docker
+- Docker Compose
+
+## Database
+
+- PostgreSQL
+- DBeaver
+
+## Upcoming Technologies
+
+- Python
+- Pandas
+- Apache Airflow
+- PySpark
+- AWS S3
+- dbt
+- Power BI
 
 ---
 
-# 📂 Repository Structure
+# ✅ Sprint Progress
+
+| Sprint | Status |
+|---------|--------|
+| Sprint 0 – Project Initialization | ✅ Complete |
+| Sprint 1 – Infrastructure Setup | ✅ Complete |
+| Sprint 2 – Healthcare Dataset & Python ETL | ⏳ Planned |
+| Sprint 3 – Apache Airflow Orchestration | ⏳ Planned |
+| Sprint 4 – PySpark Processing | ⏳ Planned |
+| Sprint 5 – AWS Data Lake Integration | ⏳ Planned |
+| Sprint 6 – dbt Analytics Engineering | ⏳ Planned |
+| Sprint 7 – Power BI Dashboard | ⏳ Planned |
+| Sprint 8 – Documentation & Deployment | ⏳ Planned |
+
+---
+
+# ✅ Sprint 0 - Project Initialization
+
+Completed:
+
+- Created GitHub repository
+- Created project folder structure
+- Configured VS Code workspace
+- Initialized Git repository
+- Created project README
+- Planned end-to-end project architecture
+
+---
+
+# ✅ Sprint 1 - Infrastructure Setup
+
+Completed:
+
+- Installed Docker Desktop
+- Learned Docker fundamentals
+- Created Docker Compose configuration
+- Deployed PostgreSQL inside a Docker container
+- Connected PostgreSQL to DBeaver
+- Created the healthcare database
+- Designed the initial relational database schema
+- Created the following tables:
+
+  - Patients
+  - Providers
+  - Claims
+  - Appointments
+  - Prescriptions
+
+- Verified successful database connectivity
+- Verified all database tables were created successfully
+
+---
+
+# 🗄️ Current Database Schema
+
+Current tables:
+
+- patients
+- providers
+- claims
+- appointments
+- prescriptions
+
+Relationships:
 
 ```
-healthcare-data-platform/
-
-├── architecture/
-├── airflow/
-├── dashboard/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── sample/
-├── dbt/
-├── docker/
-├── docs/
-├── postgres/
-├── pyspark/
-├── python/
-├── screenshots/
-├── tests/
-├── warehouse/
-├── README.md
+Patients
+    │
+    ├──────────────┐
+    ▼              ▼
+Claims       Appointments
+    ▲              ▲
+    │              │
+Providers──────────┘
+    │
+    ▼
+Prescriptions
 ```
 
 ---
 
-# 🚀 Development Roadmap
+# 🏗️ Current Infrastructure
 
-- [x] Project Planning
-- [x] Repository Setup
-- [ ] Docker Environment
-- [ ] PostgreSQL Database
-- [ ] Python Data Ingestion
-- [ ] Apache Airflow DAG
-- [ ] AWS S3 Data Lake
-- [ ] PySpark Transformations
-- [ ] Databricks Integration
-- [ ] Snowflake Data Warehouse
-- [ ] dbt Data Models
-- [ ] Power BI Dashboard
+```
+VS Code
+     │
+     ▼
+Docker Desktop
+     │
+     ▼
+PostgreSQL Container
+     │
+     ▼
+healthcare_db
+     │
+     ▼
+DBeaver
+```
 
 ---
 
-# 🎓 Learning Objectives
+# 📌 Current Features
 
-This project is designed to understand:
+- Dockerized PostgreSQL environment
+- Relational healthcare database schema
+- Local database development environment
+- Professional project structure
+- Version-controlled development using Git & GitHub
 
-- End-to-end Data Engineering architecture
-- ETL / ELT pipelines
+---
+
+# 🚀 Upcoming Sprint (Sprint 2)
+
+Objectives:
+
+- Select a real-world healthcare dataset
+- Explore and understand the dataset
+- Store raw files inside `data/raw`
+- Design the ingestion strategy
+- Build the first Python ETL pipeline
+- Load healthcare data into PostgreSQL
+
+---
+
+# 📚 Learning Objectives
+
+Through this project, the following concepts will be demonstrated:
+
+- Docker fundamentals
+- Relational database design
+- SQL
+- Python ETL
 - Workflow orchestration
-- Data Lakes
-- Data Warehouses
-- Batch Processing
-- Analytics Engineering
-- Cloud-based Data Engineering
-
----
-
-# 📌 Project Status
-
-🚧 Currently under development.
-
-This repository is being built incrementally following Agile development practices.
+- Batch processing with Spark
+- Data lake architecture
+- Analytics engineering with dbt
+- Cloud data engineering concepts
+- Dashboard development
 
 ---
 
@@ -147,6 +273,4 @@ This repository is being built incrementally following Agile development practic
 
 **Pratyusha Gadasanthala**
 
-Graduate Student | Data Engineer
-
-GitHub: https://github.com/gadasanthalapratyusha-collab
+Building this project to strengthen hands-on experience in modern Data Engineering and demonstrate production-style data pipeline development using industry-standard tools.
