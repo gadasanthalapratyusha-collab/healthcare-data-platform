@@ -1,0 +1,201 @@
+provider_id,provider_name,specialty,hospital_name,state
+PR00001,United Care,Cardiology,St. Mary Hospital,AZ
+PR00002,United Care,Primary Care,Clear Lake Medical,CA
+PR00003,United Care,Pediatrics,Houston General,NY
+PR00004,Wellness Center,Cardiology,Houston General,IL
+PR00005,Wellness Center,Orthopedics,Bay Area Medical,NY
+PR00006,United Care,Dermatology,St. Mary Hospital,AZ
+PR00007,Wellness Center,Cardiology,St. Mary Hospital,NY
+PR00008,Wellness Center,Orthopedics,Bay Area Medical,GA
+PR00009,United Care,Pediatrics,Houston General,FL
+PR00010,HealthOne Clinic,Pediatrics,Northside Health,TX
+PR00011,HealthOne Clinic,Orthopedics,Houston General,NY
+PR00012,Wellness Center,Neurology,Northside Health,TX
+PR00013,HealthOne Clinic,Orthopedics,Northside Health,TX
+PR00014,United Care,Orthopedics,Bay Area Medical,GA
+PR00015,CarePlus Hospital,Pediatrics,Clear Lake Medical,NY
+PR00016,CarePlus Hospital,Neurology,Northside Health,NC
+PR00017,Metro Medical,Orthopedics,St. Mary Hospital,GA
+PR00018,CarePlus Hospital,Pediatrics,Houston General,NC
+PR00019,United Care,Cardiology,Northside Health,CA
+PR00020,HealthOne Clinic,Cardiology,Clear Lake Medical,TX
+PR00021,Wellness Center,Primary Care,Houston General,CA
+PR00022,Wellness Center,Primary Care,Bay Area Medical,NY
+PR00023,Wellness Center,Pediatrics,Houston General,FL
+PR00024,Metro Medical,Orthopedics,Bay Area Medical,TX
+PR00025,HealthOne Clinic,Dermatology,St. Mary Hospital,FL
+PR00026,CarePlus Hospital,Neurology,Houston General,TX
+PR00027,CarePlus Hospital,Pediatrics,Houston General,AZ
+PR00028,Wellness Center,Neurology,St. Mary Hospital,AZ
+PR00029,Wellness Center,Neurology,Northside Health,AZ
+PR00030,HealthOne Clinic,Primary Care,St. Mary Hospital,NY
+PR00031,Wellness Center,Orthopedics,Northside Health,FL
+PR00032,United Care,Cardiology,Northside Health,AZ
+PR00033,HealthOne Clinic,Orthopedics,Houston General,AZ
+PR00034,Metro Medical,Neurology,St. Mary Hospital,FL
+PR00035,HealthOne Clinic,Pediatrics,Bay Area Medical,CA
+PR00036,HealthOne Clinic,Primary Care,St. Mary Hospital,TX
+PR00037,CarePlus Hospital,Primary Care,Clear Lake Medical,TX
+PR00038,United Care,Cardiology,Houston General,AZ
+PR00039,HealthOne Clinic,Neurology,Clear Lake Medical,GA
+PR00040,CarePlus Hospital,Dermatology,Bay Area Medical,TX
+PR00041,Wellness Center,Dermatology,Clear Lake Medical,FL
+PR00042,CarePlus Hospital,Orthopedics,Bay Area Medical,FL
+PR00043,CarePlus Hospital,Neurology,St. Mary Hospital,FL
+PR00044,CarePlus Hospital,Orthopedics,Houston General,NY
+PR00045,HealthOne Clinic,Neurology,Clear Lake Medical,IL
+PR00046,Metro Medical,Orthopedics,Bay Area Medical,GA
+PR00047,CarePlus Hospital,Orthopedics,Northside Health,NC
+PR00048,Metro Medical,Primary Care,Bay Area Medical,NC
+PR00049,United Care,Primary Care,St. Mary Hospital,GA
+PR00050,Metro Medical,Neurology,St. Mary Hospital,NY
+PR00051,Metro Medical,Pediatrics,Houston General,AZ
+PR00052,Metro Medical,Cardiology,Clear Lake Medical,FL
+PR00053,Metro Medical,Dermatology,Bay Area Medical,GA
+PR00054,United Care,Cardiology,Bay Area Medical,IL
+PR00055,HealthOne Clinic,Neurology,Houston General,NY
+PR00056,United Care,Pediatrics,Bay Area Medical,NC
+PR00057,United Care,Neurology,Northside Health,FL
+PR00058,HealthOne Clinic,Primary Care,St. Mary Hospital,CA
+PR00059,HealthOne Clinic,Pediatrics,Houston General,GA
+PR00060,United Care,Orthopedics,Houston General,CA
+PR00061,Metro Medical,Neurology,St. Mary Hospital,CA
+PR00062,CarePlus Hospital,Pediatrics,Northside Health,AZ
+PR00063,CarePlus Hospital,Pediatrics,Clear Lake Medical,CA
+PR00064,Metro Medical,Neurology,Clear Lake Medical,NC
+PR00065,United Care,Orthopedics,Clear Lake Medical,TX
+PR00066,Metro Medical,Pediatrics,Northside Health,NY
+PR00067,CarePlus Hospital,Cardiology,Clear Lake Medical,NY
+PR00068,CarePlus Hospital,Dermatology,Clear Lake Medical,IL
+PR00069,Wellness Center,Neurology,Northside Health,AZ
+PR00070,HealthOne Clinic,Pediatrics,Clear Lake Medical,CA
+PR00071,United Care,Primary Care,St. Mary Hospital,TX
+PR00072,HealthOne Clinic,Neurology,Bay Area Medical,TX
+PR00073,HealthOne Clinic,Neurology,Northside Health,FL
+PR00074,CarePlus Hospital,Neurology,St. Mary Hospital,TX
+PR00075,Metro Medical,Pediatrics,Northside Health,TX
+PR00076,Wellness Center,Neurology,Bay Area Medical,NY
+PR00077,Metro Medical,Primary Care,Bay Area Medical,TX
+PR00078,Metro Medical,Orthopedics,St. Mary Hospital,GA
+PR00079,HealthOne Clinic,Cardiology,St. Mary Hospital,NY
+PR00080,HealthOne Clinic,Neurology,Bay Area Medical,NY
+PR00081,HealthOne Clinic,Primary Care,Northside Health,CA
+PR00082,Wellness Center,Primary Care,Houston General,FL
+PR00083,HealthOne Clinic,Cardiology,St. Mary Hospital,AZ
+PR00084,United Care,Pediatrics,Houston General,GA
+PR00085,CarePlus Hospital,Primary Care,St. Mary Hospital,IL
+PR00086,Wellness Center,Orthopedics,Clear Lake Medical,IL
+PR00087,CarePlus Hospital,Neurology,Northside Health,TX
+PR00088,CarePlus Hospital,Neurology,Houston General,GA
+PR00089,Wellness Center,Pediatrics,Clear Lake Medical,IL
+PR00090,HealthOne Clinic,Dermatology,Houston General,NY
+PR00091,HealthOne Clinic,Primary Care,Bay Area Medical,AZ
+PR00092,United Care,Pediatrics,Houston General,FL
+PR00093,HealthOne Clinic,Primary Care,Houston General,TX
+PR00094,CarePlus Hospital,Cardiology,Clear Lake Medical,TX
+PR00095,Wellness Center,Cardiology,Northside Health,GA
+PR00096,HealthOne Clinic,Dermatology,Bay Area Medical,CA
+PR00097,CarePlus Hospital,Cardiology,St. Mary Hospital,NY
+PR00098,HealthOne Clinic,Orthopedics,Bay Area Medical,GA
+PR00099,United Care,Cardiology,St. Mary Hospital,NC
+PR00100,Wellness Center,Orthopedics,Houston General,NY
+PR00101,CarePlus Hospital,Dermatology,Clear Lake Medical,NY
+PR00102,United Care,Cardiology,St. Mary Hospital,CA
+PR00103,HealthOne Clinic,Dermatology,Houston General,IL
+PR00104,Metro Medical,Cardiology,Houston General,AZ
+PR00105,HealthOne Clinic,Neurology,Bay Area Medical,CA
+PR00106,United Care,Primary Care,St. Mary Hospital,NC
+PR00107,Metro Medical,Cardiology,Clear Lake Medical,CA
+PR00108,United Care,Cardiology,Bay Area Medical,NY
+PR00109,HealthOne Clinic,Orthopedics,Houston General,AZ
+PR00110,Metro Medical,Dermatology,St. Mary Hospital,NY
+PR00111,United Care,Primary Care,Bay Area Medical,NC
+PR00112,HealthOne Clinic,Orthopedics,Houston General,CA
+PR00113,United Care,Cardiology,Clear Lake Medical,IL
+PR00114,United Care,Pediatrics,Bay Area Medical,NY
+PR00115,Metro Medical,Primary Care,St. Mary Hospital,GA
+PR00116,United Care,Orthopedics,St. Mary Hospital,FL
+PR00117,United Care,Neurology,Houston General,NY
+PR00118,United Care,Orthopedics,Northside Health,NY
+PR00119,CarePlus Hospital,Neurology,Northside Health,FL
+PR00120,Metro Medical,Pediatrics,St. Mary Hospital,NC
+PR00121,CarePlus Hospital,Orthopedics,St. Mary Hospital,TX
+PR00122,United Care,Neurology,St. Mary Hospital,IL
+PR00123,CarePlus Hospital,Neurology,Bay Area Medical,AZ
+PR00124,CarePlus Hospital,Dermatology,Bay Area Medical,TX
+PR00125,Metro Medical,Primary Care,Northside Health,GA
+PR00126,Metro Medical,Pediatrics,Houston General,GA
+PR00127,CarePlus Hospital,Neurology,Clear Lake Medical,GA
+PR00128,United Care,Pediatrics,Clear Lake Medical,AZ
+PR00129,CarePlus Hospital,Cardiology,Houston General,GA
+PR00130,United Care,Neurology,St. Mary Hospital,TX
+PR00131,Wellness Center,Neurology,Clear Lake Medical,IL
+PR00132,Wellness Center,Neurology,Clear Lake Medical,NC
+PR00133,CarePlus Hospital,Primary Care,Northside Health,CA
+PR00134,Metro Medical,Neurology,Bay Area Medical,TX
+PR00135,HealthOne Clinic,Orthopedics,St. Mary Hospital,GA
+PR00136,United Care,Pediatrics,Bay Area Medical,TX
+PR00137,HealthOne Clinic,Primary Care,Houston General,TX
+PR00138,CarePlus Hospital,Primary Care,St. Mary Hospital,TX
+PR00139,HealthOne Clinic,Pediatrics,Northside Health,IL
+PR00140,United Care,Cardiology,Houston General,FL
+PR00141,CarePlus Hospital,Neurology,Bay Area Medical,IL
+PR00142,Metro Medical,Neurology,Clear Lake Medical,TX
+PR00143,United Care,Cardiology,St. Mary Hospital,TX
+PR00144,CarePlus Hospital,Cardiology,St. Mary Hospital,IL
+PR00145,HealthOne Clinic,Dermatology,Bay Area Medical,IL
+PR00146,United Care,Orthopedics,St. Mary Hospital,IL
+PR00147,United Care,Orthopedics,Clear Lake Medical,CA
+PR00148,United Care,Neurology,Bay Area Medical,NY
+PR00149,Metro Medical,Dermatology,Bay Area Medical,IL
+PR00150,HealthOne Clinic,Cardiology,Houston General,AZ
+PR00151,Metro Medical,Pediatrics,Northside Health,CA
+PR00152,Metro Medical,Orthopedics,Bay Area Medical,GA
+PR00153,HealthOne Clinic,Primary Care,St. Mary Hospital,CA
+PR00154,Metro Medical,Pediatrics,Bay Area Medical,TX
+PR00155,Wellness Center,Dermatology,Houston General,GA
+PR00156,United Care,Pediatrics,St. Mary Hospital,IL
+PR00157,Metro Medical,Cardiology,Bay Area Medical,TX
+PR00158,CarePlus Hospital,Dermatology,Bay Area Medical,GA
+PR00159,CarePlus Hospital,Cardiology,Clear Lake Medical,CA
+PR00160,United Care,Primary Care,Clear Lake Medical,IL
+PR00161,HealthOne Clinic,Cardiology,St. Mary Hospital,CA
+PR00162,Wellness Center,Neurology,Houston General,CA
+PR00163,United Care,Orthopedics,Bay Area Medical,AZ
+PR00164,Wellness Center,Pediatrics,Northside Health,GA
+PR00165,United Care,Primary Care,Houston General,IL
+PR00166,Metro Medical,Cardiology,Clear Lake Medical,GA
+PR00167,United Care,Primary Care,St. Mary Hospital,CA
+PR00168,CarePlus Hospital,Pediatrics,Bay Area Medical,GA
+PR00169,United Care,Orthopedics,Clear Lake Medical,GA
+PR00170,HealthOne Clinic,Primary Care,Houston General,GA
+PR00171,HealthOne Clinic,Neurology,Houston General,TX
+PR00172,Wellness Center,Orthopedics,Northside Health,NY
+PR00173,Metro Medical,Dermatology,Clear Lake Medical,TX
+PR00174,HealthOne Clinic,Pediatrics,Houston General,IL
+PR00175,Wellness Center,Dermatology,St. Mary Hospital,TX
+PR00176,Metro Medical,Dermatology,Northside Health,FL
+PR00177,HealthOne Clinic,Primary Care,Houston General,FL
+PR00178,HealthOne Clinic,Cardiology,Houston General,AZ
+PR00179,Wellness Center,Neurology,St. Mary Hospital,NY
+PR00180,Metro Medical,Primary Care,St. Mary Hospital,FL
+PR00181,CarePlus Hospital,Primary Care,Clear Lake Medical,IL
+PR00182,HealthOne Clinic,Neurology,Houston General,NY
+PR00183,HealthOne Clinic,Cardiology,Clear Lake Medical,TX
+PR00184,Wellness Center,Cardiology,Houston General,TX
+PR00185,CarePlus Hospital,Dermatology,Clear Lake Medical,TX
+PR00186,HealthOne Clinic,Dermatology,Houston General,IL
+PR00187,Wellness Center,Neurology,Clear Lake Medical,CA
+PR00188,Metro Medical,Cardiology,Bay Area Medical,GA
+PR00189,Wellness Center,Dermatology,Houston General,AZ
+PR00190,Metro Medical,Orthopedics,Clear Lake Medical,CA
+PR00191,HealthOne Clinic,Cardiology,Clear Lake Medical,IL
+PR00192,CarePlus Hospital,Dermatology,St. Mary Hospital,NY
+PR00193,United Care,Dermatology,St. Mary Hospital,AZ
+PR00194,CarePlus Hospital,Primary Care,Northside Health,IL
+PR00195,Metro Medical,Cardiology,St. Mary Hospital,NY
+PR00196,Metro Medical,Cardiology,Clear Lake Medical,AZ
+PR00197,Metro Medical,Dermatology,Houston General,GA
+PR00198,United Care,Primary Care,Bay Area Medical,NY
+PR00199,Metro Medical,Cardiology,Bay Area Medical,FL
+PR00200,Metro Medical,Neurology,Clear Lake Medical,NC

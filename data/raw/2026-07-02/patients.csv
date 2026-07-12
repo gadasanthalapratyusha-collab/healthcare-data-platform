@@ -1,0 +1,13 @@
+patient_id,first_name,last_name,gender,date_of_birth,state
+P001001,Michael,Thomas,Male,1970-04-24,NY
+P001002,Jennifer,Taylor,Female,2009-08-31,CA
+P001003,Patricia,Davis,Male,1975-11-13,FL
+P001004,Jennifer,Brown,Female,1974-12-25,IL
+P001005,Sarah,Taylor,Female,2004-11-05,CA
+P001006,David,Taylor,Male,2001-06-22,AZ
+P001007,David,Moore,Male,2000-05-31,AZ
+P001008,David,Moore,Female,1951-02-25,NC
+P001009,Sarah,Smith,Male,1961-05-21,FL
+P001010,David,Taylor,Female,1991-04-09,CA
+P001011,Michael,Anderson,Male,1994-01-01,NC
+P001012,Sarah,Johnson,Female,1950-07-15,AZ

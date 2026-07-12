@@ -1,0 +1,8 @@
+patient_id,first_name,last_name,gender,date_of_birth,state
+P001013,Mary,Smith,Male,1978-08-19,TX
+P001014,Patricia,Martin,Male,1991-06-06,NY
+P001015,Linda,Wilson,Female,1991-04-26,FL
+P001016,Robert,Thomas,Male,2006-12-29,AZ
+P001017,David,Brown,Female,1972-03-10,IL
+P001018,Jennifer,Thomas,Female,1968-01-05,NC
+P001019,Linda,Smith,Male,1956-01-21,AZ
