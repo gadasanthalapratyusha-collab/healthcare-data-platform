@@ -20,78 +20,58 @@ Build a production-style healthcare data platform that:
 
 ---
 
-# 🏗️ Planned End-to-End Architecture
-
-```
-                    Healthcare Source Files
-                              │
-                              ▼
-                     Raw CSV Files
-                              │
-                              ▼
-                   Python ETL Pipeline
-                              │
-                              ▼
-                     PostgreSQL Database
-                              │
-                              ▼
-                 Apache Airflow Orchestration
-                              │
-                              ▼
-                  PySpark Transformations
-                              │
-                              ▼
-                    AWS S3 Data Lake
-                              │
-                              ▼
-                  dbt Analytics Models
-                              │
-                              ▼
-                   Power BI Dashboard
-```
+Healthcare Source Files
+        │
+        ▼
+Raw Daily Data (CSV)
+        │
+        ▼
+Apache Airflow
+        │
+        ▼
+Python ETL
+        │
+        ▼
+PostgreSQL
+        │
+        ▼
+PySpark
+        │
+        ▼
+AWS S3 Data Lake
+        │
+        ▼
+dbt
+        │
+        ▼
+Power BI
 
 ---
 
 # 📁 Project Structure
 
-```
-healthcare-data-platform/
+python/
 │
-├── airflow/
-│   └── dags/
+├── simulator/
+│   ├── hospital_simulator.py
+│   ├── patient_service.py
+│   ├── provider_service.py
+│   ├── claim_service.py
+│   ├── appointment_service.py
+│   ├── prescription_service.py
+│   ├── metadata_manager.py
+│   └── utils.py
 │
-├── architecture/
-│
-├── dashboard/
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── sample/
-│
-├── dbt/
-│
-├── docker/
-│
-├── docs/
-│
-├── postgres/
-│   └── schema.sql
-│
-├── pyspark/
-│
-├── python/
-│
-├── screenshots/
-│
-├── tests/
-│
-├── warehouse/
-│
-├── docker-compose.yml
-│
-└── README.md
-```
+└── etl/
+    ├── extract.py
+    ├── transform.py
+    ├── load.py
+    └── transformers/
+        ├── validation.py
+        ├── patient_transformer.py
+        ├── claim_transformer.py
+        ├── appointment_transformer.py
+        └── prescription_transformer.py
 
 ---
 
@@ -116,7 +96,7 @@ healthcare-data-platform/
 - PostgreSQL
 - DBeaver
 
-## Upcoming Technologies
+## Data Engineering Stack
 
 - Python
 - Pandas
@@ -134,13 +114,15 @@ healthcare-data-platform/
 |---------|--------|
 | Sprint 0 – Project Initialization | ✅ Complete |
 | Sprint 1 – Infrastructure Setup | ✅ Complete |
-| Sprint 2 – Healthcare Dataset & Python ETL | ⏳ Planned |
-| Sprint 3 – Apache Airflow Orchestration | ⏳ Planned |
-| Sprint 4 – PySpark Processing | ⏳ Planned |
-| Sprint 5 – AWS Data Lake Integration | ⏳ Planned |
-| Sprint 6 – dbt Analytics Engineering | ⏳ Planned |
-| Sprint 7 – Power BI Dashboard | ⏳ Planned |
-| Sprint 8 – Documentation & Deployment | ⏳ Planned |
+| Sprint 2 – Hospital Data Simulator | ✅ Complete |
+| Sprint 3 – ETL Pipeline (Extract & Transform) | ✅ Complete |
+| Sprint 4 – Load Data into PostgreSQL | ⏳ Next |
+| Sprint 5 – Apache Airflow Orchestration | ⏳ Planned |
+| Sprint 6 – PySpark Processing | ⏳ Planned |
+| Sprint 7 – AWS Data Lake Integration | ⏳ Planned |
+| Sprint 8 – dbt Analytics Engineering | ⏳ Planned |
+| Sprint 9 – Power BI Dashboard | ⏳ Planned |
+| Sprint 10 – Documentation & Deployment | ⏳ Planned |
 
 ---
 
@@ -231,17 +213,23 @@ DBeaver
 
 # 📌 Current Features
 
+# 📌 Current Features
+
 - Dockerized PostgreSQL environment
-- Relational healthcare database schema
-- Local database development environment
-- Professional project structure
-- Version-controlled development using Git & GitHub
+- Healthcare relational database schema
+- Modular hospital data simulator
+- Incremental daily data generation
+- Metadata-driven delivery tracking
+- Master patient and provider registries
+- Modular ETL architecture
+- Automatic extraction of latest daily delivery
+- Data validation and cleansing pipeline
+- Reusable transformation utilities
+- Version-controlled development with Git & GitHub
 
 ---
 
-# 🚀 Upcoming Sprint (Sprint 2)
-
-Objectives:
+## Objectives:
 
 - Select a real-world healthcare dataset
 - Explore and understand the dataset
@@ -251,6 +239,94 @@ Objectives:
 - Load healthcare data into PostgreSQL
 
 ---
+## Sprint 2 - Hospital Data Simulator ✅
+
+Completed:
+- Built a realistic hospital data simulator
+- Implemented modular simulator architecture
+- Created master patient registry
+- Created master provider registry
+- Implemented metadata manager to track daily deliveries
+- Generated incremental daily hospital data
+- Created automatic date-based folder structure
+- Simulated new patient registrations each day
+- Simulated daily claims
+- Simulated daily appointments
+- Simulated daily prescriptions
+- Updated master patient registry after each delivery
+- Tracked generator state using metadata
+
+## Daily Delivery Structure:
+
+data/raw/
+├── 2026-07-01/
+│   ├── patients.csv
+│   ├── claims.csv
+│   ├── appointments.csv
+│   └── prescriptions.csv
+│
+├── 2026-07-02/
+│   ├── patients.csv
+│   ├── claims.csv
+│   ├── appointments.csv
+│   └── prescriptions.csv
+│
+└── ...
+
+Reference Data:
+
+data/sample/
+├── master_patients.csv
+└── master_providers.csv
+
+Metadata:
+
+data/metadata/
+└── generator_state.json
+
+Simulator Components:
+
+python/simulator/
+├── hospital_simulator.py
+├── metadata_manager.py
+├── patient_service.py
+├── claim_service.py
+├── appointment_service.py
+├── prescription_service.py
+└── utils.py
+
+Tech Stack:
+- Python
+- Pandas
+- Faker
+- CSV
+
+## Sprint 3 - ETL Pipeline ✅
+
+Completed:
+- Built modular ETL architecture
+- Implemented extract layer
+- Automatic latest delivery detection
+- Implemented patient transformer
+- Implemented claim transformer
+- Implemented appointment transformer
+- Implemented prescription transformer
+- Added reusable validation utilities
+- Validated schemas and IDs
+- Removed duplicate records
+- Standardized text and date fields
+
+Current ETL Flow:
+
+Hospital Simulator
+        ↓
+Raw Daily Data
+        ↓
+Extract
+        ↓
+Transform
+        ↓
+Ready for Load
 
 # 📚 Learning Objectives
 
@@ -259,7 +335,7 @@ Through this project, the following concepts will be demonstrated:
 - Docker fundamentals
 - Relational database design
 - SQL
-- Python ETL
+- Building modular ETL pipelines
 - Workflow orchestration
 - Batch processing with Spark
 - Data lake architecture
