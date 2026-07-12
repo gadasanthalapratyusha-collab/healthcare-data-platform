@@ -1,0 +1,7 @@
+patient_id,first_name,last_name,gender,date_of_birth,state
+P001066,Patricia,Wilson,Female,1997-03-12,GA
+P001067,Robert,Brown,Male,1986-10-27,NC
+P001068,Sarah,Anderson,Male,1961-06-04,TX
+P001069,Michael,Davis,Male,1954-03-08,FL
+P001070,Mary,Martin,Male,1965-12-03,GA
+P001071,Linda,Davis,Male,1960-10-02,AZ

@@ -1,0 +1,17 @@
+patient_id,first_name,last_name,gender,date_of_birth,state
+P001037,Jennifer,Taylor,Female,1996-03-04,CA
+P001038,Robert,Smith,Male,1964-01-24,AZ
+P001039,Robert,Smith,Male,2005-11-05,GA
+P001040,Michael,Taylor,Female,2001-08-04,AZ
+P001041,Robert,Johnson,Female,1999-07-18,IL
+P001042,Michael,Smith,Female,2009-10-22,GA
+P001043,Michael,Moore,Male,1977-04-22,GA
+P001044,David,Anderson,Male,1990-02-06,CA
+P001045,Jennifer,Moore,Female,1997-09-19,FL
+P001046,David,Anderson,Female,1959-08-01,AZ
+P001047,Mary,Anderson,Female,1970-05-11,CA
+P001048,Robert,Thomas,Female,2002-04-20,FL
+P001049,Michael,Davis,Male,1967-06-23,NY
+P001050,Linda,Moore,Male,2005-04-07,FL
+P001051,Patricia,Moore,Male,1972-04-26,AZ
+P001052,Jennifer,Martin,Female,1985-09-20,GA

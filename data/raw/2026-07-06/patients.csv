@@ -1,0 +1,14 @@
+patient_id,first_name,last_name,gender,date_of_birth,state
+P001053,Michael,Davis,Male,1969-05-08,NC
+P001054,Patricia,Moore,Male,1958-10-08,CA
+P001055,Jennifer,Taylor,Female,1974-04-18,NC
+P001056,Linda,Wilson,Male,1963-05-27,FL
+P001057,Michael,Taylor,Female,1998-09-22,IL
+P001058,Jennifer,Martin,Female,1989-07-11,NC
+P001059,Michael,Martin,Female,1961-05-12,GA
+P001060,Patricia,Smith,Female,1988-08-28,CA
+P001061,Jennifer,Moore,Male,1957-02-15,CA
+P001062,Mary,Brown,Female,1972-02-14,IL
+P001063,Patricia,Martin,Male,2010-03-12,FL
+P001064,Linda,Brown,Male,1950-08-12,IL
+P001065,John,Anderson,Female,1998-10-24,CA

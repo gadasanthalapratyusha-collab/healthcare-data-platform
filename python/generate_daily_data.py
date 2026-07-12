@@ -3,12 +3,16 @@ from pathlib import Path
 
 import pandas as pd
 
+from simulator.claim_service import generate_claims
+from simulator.appointment_service import generate_appointments
+from simulator.prescription_service import generate_prescriptions
 from simulator.metadata_manager import (
     get_next_date,
     load_metadata,
     save_metadata,
 )
 from simulator.patient_service import generate_new_patients
+
 
 RAW_DIR = Path("data/raw")
 SAMPLE_DIR = Path("data/sample")
@@ -55,169 +59,6 @@ def load_master_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     providers = pd.read_csv(MASTER_PROVIDERS_FILE)
 
     return patients, providers
-
-
-def generate_claims(
-    patients: pd.DataFrame,
-    providers: pd.DataFrame,
-    metadata: dict,
-    run_date: str,
-    count: int,
-) -> pd.DataFrame:
-    """
-    Generate claims using valid patient and provider IDs.
-    """
-    rows = []
-
-    patient_ids = patients["patient_id"].tolist()
-    provider_ids = providers["provider_id"].tolist()
-
-    diagnosis_codes = [
-        "E11",
-        "I10",
-        "J45",
-        "M54",
-        "R51",
-    ]
-
-    procedure_codes = [
-        "99213",
-        "99214",
-        "93000",
-        "80053",
-        "36415",
-    ]
-
-    for _ in range(count):
-        metadata["last_claim_id"] += 1
-
-        rows.append(
-            {
-                "claim_id": (
-                    f"C{metadata['last_claim_id']:08d}"
-                ),
-                "patient_id": random.choice(patient_ids),
-                "provider_id": random.choice(provider_ids),
-                "diagnosis_code": random.choice(
-                    diagnosis_codes
-                ),
-                "procedure_code": random.choice(
-                    procedure_codes
-                ),
-                "claim_amount": round(
-                    random.uniform(100, 5000),
-                    2,
-                ),
-                "claim_date": run_date,
-                "claim_status": random.choice(
-                    ["Approved", "Denied", "Pending"]
-                ),
-            }
-        )
-
-    return pd.DataFrame(rows)
-
-
-def generate_appointments(
-    patients: pd.DataFrame,
-    providers: pd.DataFrame,
-    metadata: dict,
-    run_date: str,
-    count: int,
-) -> pd.DataFrame:
-    """
-    Generate daily patient appointments.
-    """
-    rows = []
-
-    patient_ids = patients["patient_id"].tolist()
-    provider_ids = providers["provider_id"].tolist()
-
-    appointment_types = [
-        "Routine",
-        "Follow-up",
-        "Emergency",
-        "Specialist",
-    ]
-
-    appointment_statuses = [
-        "Completed",
-        "Cancelled",
-        "Scheduled",
-    ]
-
-    for _ in range(count):
-        metadata["last_appointment_id"] += 1
-
-        rows.append(
-            {
-                "appointment_id": (
-                    f"A{metadata['last_appointment_id']:08d}"
-                ),
-                "patient_id": random.choice(patient_ids),
-                "provider_id": random.choice(provider_ids),
-                "appointment_date": run_date,
-                "appointment_type": random.choice(
-                    appointment_types
-                ),
-                "status": random.choice(
-                    appointment_statuses
-                ),
-            }
-        )
-
-    return pd.DataFrame(rows)
-
-
-def generate_prescriptions(
-    patients: pd.DataFrame,
-    providers: pd.DataFrame,
-    metadata: dict,
-    run_date: str,
-    count: int,
-) -> pd.DataFrame:
-    """
-    Generate daily prescriptions.
-    """
-    rows = []
-
-    patient_ids = patients["patient_id"].tolist()
-    provider_ids = providers["provider_id"].tolist()
-
-    medications = [
-        "Metformin",
-        "Lisinopril",
-        "Atorvastatin",
-        "Amoxicillin",
-        "Albuterol",
-    ]
-
-    dosages = [
-        "5mg",
-        "10mg",
-        "20mg",
-        "500mg",
-    ]
-
-    for _ in range(count):
-        metadata["last_prescription_id"] += 1
-
-        rows.append(
-            {
-                "prescription_id": (
-                    f"RX{metadata['last_prescription_id']:08d}"
-                ),
-                "patient_id": random.choice(patient_ids),
-                "provider_id": random.choice(provider_ids),
-                "medication_name": random.choice(
-                    medications
-                ),
-                "dosage": random.choice(dosages),
-                "prescription_date": run_date,
-            }
-        )
-
-    return pd.DataFrame(rows)
 
 
 def main() -> None:
